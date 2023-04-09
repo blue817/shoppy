@@ -83,5 +83,5 @@ export async function addOrUpdateToCart(userId, product){
 }
 
 export async function removeFromCart(userId, productId){
-  return removeFromCart(ref(database, `carts/${userId}/${productId}`))
+  return remove(ref(database, `carts/${userId}/${productId}`))
 }
